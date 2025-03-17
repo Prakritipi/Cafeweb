@@ -1,0 +1,38 @@
+body {
+    font-family: 'Inconsolata', monospace;
+}
+.header-text {
+    font-size: 9rem;
+    /* font-weight: bold; */
+    font-family: 'Inconsolata', monospace;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.menu-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.menu-item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 10px; /* Add spacing between menu items */
+    margin-left: 30px;
+}
+
+.menu-price {
+    font-size: 1.2rem;
+    text-align: left; /* Align prices to the left */
+    margin-bottom: 10px; /* Add spacing between menu items */
+}
+
+
+.bgimg {
+    background: url("coffeehouse.jpg") center/cover no-repeat;
+    height: 75vh;
+    position: relative;
+}
