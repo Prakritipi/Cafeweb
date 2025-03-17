@@ -52,62 +52,81 @@
 
 <!-- About Section -->
 <section class="bg-light py-5" id="about">
-    <div class="container text-center">
-        <h2 class="fw-bold bg-black text-white p-2 text-center d-inline-block">ABOUT THE CAFE</h2>
-        <p class="fs-5">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <p class="fs-5">We serve fresh made-to-order breakfast and lunch sandwiches, as well as sides and salads.</p>
-        <div class="border-start ps-3 text-start bg-light">
-            <p class="fst-italic fs-5">"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
-            <p class="fs-5"><strong>Chef, Coffeeist and Owner:</strong> Liam Brown</p>
+    <div class="container">
+        <div class="text-center w-100 ">
+            <h2 class="fw-bold bg-black text-white p-2 mx-auto d-inline-block">ABOUT THE CAFE</h2>
         </div>
-        <img src="about-uspic.png" class="img-fluid mt-3" style="max-width: 1000px;">
-        <p class="fs-4"><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
-        <p class="fs-4"><strong>Address:</strong> 15 Adr street, 5015, NY</p>        
+
+        <p class="fs-3">The Cafe was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="fs-3">In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff. </p>
+
+            <div class="border-start ps-3 text-start bg-light">
+                <p class="fst-italic fs-5">"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</p>
+                <p class="fs-5"><strong>Chef, Coffeeist and Owner:</strong> Liam Brown</p>
+            </div>
+    </div>
+        </div class="text-center w-100 ">
+            <img src="about-uspic.png" class="img-fluid mt-3" style="max-width: 1000px;">
+            <p class="fs-4"><strong>Opening hours:</strong> everyday from 6am to 5pm.</p>
+            <p class="fs-4"><strong>Address:</strong> 15 Adr street, 5015, NY</p> 
+        </div>       
     </div>
 </section>
 
-<!-- Menu -->
-<section class="bg-gray py-5" id="menu">
-    <div class="container text-center">
-        <h2 class="section-title fw-bold bg-black text-white p-2 text-center d-inline-block"">THE MENU</h2>
-        <div class="nav nav-pills justify-content-center mt-3" role="tablist">
-            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#Eat">Eat</button>
-            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#Drinks">Drink</button>
+</head>
+<body>
+
+<!-- Menu Section -->
+<section class="bg-white py-5" id="menu">
+<div class="container text-center">
+    <h2 class="section-title fw-bold bg-black text-white p-2 text-center d-inline-block"">THE MENU</h2>
+
+    <div class="d-flex justify-content-center  p-3 mt-3">
+        <button class="tablink" onclick="openMenu(event, 'Eat')">Eat</button>
+        <button class="tablink" onclick="openMenu(event, 'Drinks')">Drink</button>
+    </div>
+
+    <div class="menu-box mt-4">
+        <div id="Eat" class="menu-content">
+            <h5 class="menu-item">Bread Basket</h5>
+            <p class="text-muted menu-price">Fresh baked fruit breads and muffins - $5.50</p>
+            <h5 class="menu-item">Honey Almond Granola with Fruits</h5>
+            <p class="text-muted menu-price">Natural cereal of honey toasted oats, raisins, almonds, and dates - $7.00</p>
+            <h5 class="menu-item">Belgian Waffle</h5>
+            <p class="text-muted menu-price">Vanilla flavored batter with malted flour - $7.50</p>
+            <h5 class="menu-item">Scrambled Eggs</h5>
+            <p class="text-muted menu-price">Scrambled eggs, roasted red pepper, and garlic, with green onions - $7.50</p>
+            <h5 class="menu-item">Blueberry Pancakes</h5>
+            <p class="text-muted menu-price">With syrup, butter, and lots of berries - $8.50</p>
         </div>
 
-        <div class="tab-content mt-4">
-            <!-- Eat -->
-            <div id="Eat" class="tab-pane fade show active">
-                <h5 class="menu-item">Bread Basket</h5>
-                <p class="text-muted menu-price">Fresh baked fruit breads and muffins - $5.50</p>
-                <h5 class="menu-item">Honey Almond Granola with Fruits</h5>
-                <p class="text-muted menu-price">Natural cereal of honey toasted oats, raisins, almonds, and dates - $7.00</p>
-                <h5 class="menu-item">Belgian Waffle</h5>
-                <p class="text-muted menu-price">Vanilla flavored batter with malted flour - $7.50</p>
-                <h5 class="menu-item">Scrambled Eggs</h5>
-                <p class="text-muted menu-price">Scrambled eggs, roasted red pepper, and garlic, with green onions - $7.50</p>
-                <h5 class="menu-item">Blueberry Pancakes</h5>
-                <p class="text-muted menu-price">With syrup, butter, and lots of berries - $8.50</p>
-            </div>
-
-            <!-- Drinks -->
-            <div id="Drinks" class="tab-pane fade">
-                <h5 class="menu-item">Coffee</h5>
-                <p class="text-muted menu-price">Regular coffee - $2.50</p>
-                <h5 class="menu-item">Chocolato</h5>
-                <p class="text-muted menu-price">Chocolate espresso with milk - $4.50</p>
-                <h5 class="menu-item">Corretto</h5>
-                <p class="text-muted menu-price">Whiskey and coffee - $5.00</p>
-                <h5 class="menu-item">Iced tea</h5>
-                <p class="text-muted menu-price">Hot tea, except not hot - $3.00</p>
-                <h5 class="menu-item">Soda</h5>
-                <p class="text-muted menu-price">Coke, Sprite, Fanta, etc. - $2.50</p>
-            </div>
+        <div id="Drinks" class="menu-content" style="display: none;">
+            <h5 class="menu-item">Coffee</h5>
+            <p class="text-muted menu-price">Regular coffee - $2.50</p>
+            <h5 class="menu-item">Chocolato</h5>
+            <p class="text-muted menu-price">Chocolate espresso with milk - $4.50</p>
+            <h5 class="menu-item">Corretto</h5>
+            <p class="text-muted menu-price">Whiskey and coffee - $5.00</p>
+            <h5 class="menu-item">Iced tea</h5>
+            <p class="text-muted menu-price">Hot tea, except not hot - $3.00</p>
+            <h5 class="menu-item">Soda</h5>
+            <p class="text-muted menu-price">Coke, Sprite, Fanta, etc. - $2.50</p>
         </div>
-
         <img src="menu-pic.png" class="img-fluid mt-3">
     </div>
+</div>
 </section>
+
+<script>
+function openMenu(evt, menuName) {
+    let i, menuContent;
+    menuContent = document.getElementsByClassName("menu-content");
+    for (i = 0; i < menuContent.length; i++) {
+        menuContent[i].style.display = "none";
+    }
+    document.getElementById(menuName).style.display = "block";
+}
+</script>
 
 <!-- Contact -->
 <section class="bg-light py-5" id="where">
